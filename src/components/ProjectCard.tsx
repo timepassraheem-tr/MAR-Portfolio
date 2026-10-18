@@ -131,7 +131,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             rel="noreferrer noopener"
             className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-purple-700/80 via-violet-600/80 to-purple-800/80 hover:from-purple-600 hover:to-violet-600 border border-purple-400/30 shadow-[0_0_15px_rgba(147,51,234,0.25)] hover:shadow-[0_0_25px_rgba(168,85,247,0.45)] transition-all duration-200 group/btn"
           >
-            <span>View Project</span>
+            <span>Click to Open Website</span>
             <ExternalLink className="w-4 h-4 text-purple-200 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
           </a>
         </div>

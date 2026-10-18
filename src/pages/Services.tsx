@@ -71,12 +71,13 @@ export const Services: React.FC<ServicesProps> = ({ onRouteChange }) => {
             </p>
           </div>
 
-          <div className="lg:col-span-4 flex lg:justify-end">
+          <div className="lg:col-span-4 flex flex-wrap lg:justify-end gap-3">
             <button
-              onClick={() => onRouteChange('/contact')}
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-500 hover:to-purple-500 shadow-[0_0_20px_rgba(147,51,234,0.35)] border border-purple-400/30 transition-all"
+              onClick={() => onRouteChange('/work-with-mar')}
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-purple-600 via-violet-600 to-fuchsia-600 hover:from-purple-500 hover:to-violet-500 shadow-[0_0_20px_rgba(147,51,234,0.35)] border border-purple-400/30 transition-all"
             >
-              <span>Request a Quote</span>
+              <Sparkles className="w-4 h-4 text-purple-200" />
+              <span>View Quotations & Pricing</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>

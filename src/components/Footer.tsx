@@ -42,22 +42,31 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
               <BrandLogo size="md" />
             </button>
             <p className="text-sm text-slate-400 leading-relaxed">
-              M.A.R Enterprise — Premium digital portfolio of MD Abdul Raheem. Fusing creative graphic design, modern web platforms, and intelligent automation.
+              MAR Enterprise — Premium digital solutions for your business. Websites, Branding, Digital Marketing & AI Automations.
             </p>
             <div className="flex items-center gap-3 pt-2">
               <a
-                href="mailto:marenterprise07@gmail.com"
+                href={`mailto:${PERSONAL_INFO.email}`}
                 className="w-9 h-9 rounded-lg bg-purple-950/40 border border-purple-500/30 text-purple-300 hover:text-white hover:border-purple-400 hover:bg-purple-900/50 flex items-center justify-center transition-all shadow-[0_0_10px_rgba(168,85,247,0.15)]"
-                aria-label="Email MD Abdul Raheem"
+                aria-label="Email MAR Enterprise"
               >
                 <Mail className="w-4 h-4" />
               </a>
               <a
-                href="tel:+919182835781"
+                href={`tel:${PERSONAL_INFO.phone}`}
                 className="w-9 h-9 rounded-lg bg-purple-950/40 border border-purple-500/30 text-purple-300 hover:text-white hover:border-purple-400 hover:bg-purple-900/50 flex items-center justify-center transition-all shadow-[0_0_10px_rgba(168,85,247,0.15)]"
-                aria-label="Call MD Abdul Raheem"
+                aria-label="Call MAR Enterprise"
               >
                 <Phone className="w-4 h-4" />
+              </a>
+              <a
+                href={`https://wa.me/917842906002`}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="w-9 h-9 rounded-lg bg-purple-950/40 border border-purple-500/30 text-purple-300 hover:text-white hover:border-purple-400 hover:bg-purple-900/50 flex items-center justify-center transition-all shadow-[0_0_10px_rgba(168,85,247,0.15)]"
+                aria-label="WhatsApp MAR Enterprise"
+              >
+                <Send className="w-4 h-4" />
               </a>
               <a
                 href="https://t.me/marenterprise07"

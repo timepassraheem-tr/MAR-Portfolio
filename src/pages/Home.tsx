@@ -32,7 +32,7 @@ interface HomeProps {
 }
 
 export const Home: React.FC<HomeProps> = ({ onRouteChange }) => {
-  const featuredProjects = PROJECTS_DATA.slice(0, 3);
+  const featuredProjects = PROJECTS_DATA.slice(0, 4);
 
   return (
     <div className="min-h-screen pt-28 pb-20 overflow-hidden">
@@ -341,10 +341,10 @@ export const Home: React.FC<HomeProps> = ({ onRouteChange }) => {
                     href={project.url}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-xs font-semibold text-white bg-purple-900/50 hover:bg-purple-800/80 border border-purple-400/30 transition-all shadow-[0_0_12px_rgba(147,51,234,0.2)]"
+                    className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-purple-700 via-violet-600 to-purple-600 hover:from-purple-600 hover:to-violet-500 border border-purple-400/40 shadow-[0_0_15px_rgba(168,85,247,0.3)] hover:shadow-[0_0_22px_rgba(168,85,247,0.5)] transition-all group/btn"
                   >
-                    <span>Visit Live Site</span>
-                    <ExternalLink className="w-3.5 h-3.5" />
+                    <span>Click to Open Website</span>
+                    <ExternalLink className="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
                   </a>
                 </div>
               </SpotlightCard>

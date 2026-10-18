@@ -9,6 +9,7 @@ export interface Project {
   tags: string[];
   gradient: string;
   image?: string;
+  year?: string;
 }
 
 export interface Service {
@@ -39,17 +40,20 @@ export interface CertificationItem {
 
 export const PERSONAL_INFO = {
   name: "MD Abdul Raheem",
-  brand: "M.A.R Enterprise",
-  role: "Graphic Designer & Web Developer",
-  subRole: "AI & Automation Enthusiast",
-  phone: "+91 9182835781",
-  email: "marenterprise07@gmail.com",
-  location: "India, Telangana, Hyderabad",
+  brand: "MAR Enterprise",
+  tagline: "YOUR DIGITAL GROWTH PARTNER",
+  taglineSecondary: "YOUR BUSINESS OUR DIGITAL SOLUTIONS",
+  role: "Digital Marketing | AI Automation | AI Agents | Web & Digital Creative",
+  subRole: "Web & Graphic Design Project Specialist",
+  phone: "+91 78429 06002",
+  email: "mdabdulraheemmar@gmail.com",
+  portfolioUrl: "https://mar-portfolio-one.vercel.app",
+  location: "Hyderabad, Telangana, India",
   currentYear: "2026",
   bioShort:
-    "Passionate Graphic Designer, Web Developer and AI & Automation enthusiast crafting visually arresting, high-converting digital products and intelligent workflows.",
+    "Digital-focused hands-on experience across Digital Marketing, AI automation, AI agents, Web Development, Graphic Design, and Digital growth solutions.",
   bioLong:
-    "I'm MD Abdul Raheem, a multi-disciplinary creator specializing in modern website architecture, brand identity design, and cutting-edge artificial intelligence automations. Through M.A.R Enterprise, I transform conceptual ideas into responsive, production-ready web experiences and automated business solutions.",
+    "Digital-focused hands-on experience across Digital Marketing, AI automation, AI agents, Web Development, Graphic Design, and Digital growth solutions. Experienced in building Automation Workflows and agent-based solutions for Telegram, WhatsApp, Calendar scheduling, YouTube, Instagram, Facebook/Content Workflows, and job-search/outreach processes. Also experienced in Social Media management, Google Ads, Meta Ads, Campaign Creatives, Content Planning, Website development, SEO, GEO, AEO and Responsive digital experiences. Currently pursuing Intermediate 2nd Year (CEC), With Certified Training in Digital Marketing, AI Builder Mastery, Graphic Designing, and MS Office.",
   stats: [
     { label: "Projects Completed", value: 16, suffix: "+" },
     { label: "Client Satisfaction", value: 100, suffix: "%" },
@@ -57,8 +61,9 @@ export const PERSONAL_INFO = {
     { label: "Specialized Skillsets", value: 16, suffix: "+" },
   ],
   socials: [
-    { name: "Email", url: "mailto:marenterprise07@gmail.com", icon: "Mail" },
-    { name: "Phone", url: "tel:+919182835781", icon: "Phone" },
+    { name: "Email", url: "mailto:mdabdulraheemmar@gmail.com", icon: "Mail" },
+    { name: "Phone", url: "tel:+917842906002", icon: "Phone" },
+    { name: "WhatsApp", url: "https://wa.me/917842906002", icon: "MessageCircle" },
     { name: "Telegram", url: "https://t.me/marenterprise07", icon: "Send" },
     { name: "GitHub", url: "https://github.com", icon: "Github" },
     { name: "LinkedIn", url: "https://linkedin.com", icon: "Linkedin" },
@@ -68,12 +73,11 @@ export const PERSONAL_INFO = {
 export const EDUCATION_DATA: EducationItem[] = [
   {
     period: "2025 – 2027 (Present)",
-    title: "Inter 2nd Year [CEC]",
-    institution: "MS College",
-    boardOrStream: "CEC Stream (Commerce, Economics, Civics)",
+    title: "Intermediate 2nd Year [CEC]",
+    institution: "MS Junior College",
+    boardOrStream: "Commerce, Economics, Civics",
     status: "Present",
-    description:
-      "Deepening business fundamentals, economics, and commercial acumen while scaling enterprise web and digital design projects.",
+    description: "Commerce, Economics, Civics",
   },
   {
     period: "2024 – 2025",
@@ -81,25 +85,17 @@ export const EDUCATION_DATA: EducationItem[] = [
     institution: "Mukarram Jah School",
     boardOrStream: "ICSE Board",
     status: "Completed",
-    description:
-      "Rigorous secondary school education with foundational technical problem-solving, science, and computer applications.",
+    description: "ICSE Board",
   },
 ];
 
 export const CERTIFICATIONS_DATA: CertificationItem[] = [
   {
-    title: "MS OFFICE",
-    issuer: "SETWIN",
-    type: "Certificate",
-    badge: "Official Certification",
-    color: "from-blue-500 to-indigo-600",
-  },
-  {
-    title: "Graphic Designing",
+    title: "Masters in Digital Marketing",
     issuer: "ASDC",
     type: "Certificate",
-    badge: "Professional Certificate",
-    color: "from-purple-500 to-pink-600",
+    badge: "Advanced and Mastry Certficate",
+    color: "from-fuchsia-600 to-pink-600",
   },
   {
     title: "AI Builder Mastery",
@@ -107,6 +103,20 @@ export const CERTIFICATIONS_DATA: CertificationItem[] = [
     type: "Certificate",
     badge: "Advanced AI Masterclass",
     color: "from-violet-600 to-fuchsia-600",
+  },
+  {
+    title: "Graphic Designing",
+    issuer: "ASDC",
+    type: "Certificate",
+    badge: "Professional Certificate",
+    color: "from-purple-500 to-indigo-600",
+  },
+  {
+    title: "MS Office",
+    issuer: "SETWIN",
+    type: "Certificate",
+    badge: "Official Certification",
+    color: "from-blue-500 to-indigo-600",
   },
 ];
 
@@ -124,6 +134,7 @@ export const GRAPHIC_DESIGN_SKILLS = [
 export const COURSES_DATA = [
   { name: "AI", icon: "Cpu", category: "Artificial Intelligence" },
   { name: "Generative AI", icon: "Sparkles", category: "Artificial Intelligence" },
+  { name: "Google and Meta Ads", icon: "TrendingUp", category: "Digital Marketing" },
   { name: "Digital Marketing", icon: "TrendingUp", category: "Growth & Marketing" },
   { name: "Website Designing", icon: "Palette", category: "Web Design" },
   { name: "Website Developing", icon: "Code2", category: "Engineering" },
@@ -133,7 +144,7 @@ export const COURSES_DATA = [
   { name: "Automation", icon: "Zap", category: "Automation" },
   { name: "AI Automation", icon: "Bot", category: "Automation" },
   { name: "How to Make AI Agents", icon: "Brain", category: "Agentic AI" },
-  { name: "YouTube Automation", icon: "Video", category: "Media Automation" },
+  { name: "YouTube, Instagram, Facebook Automation & Posting", icon: "Video", category: "Media Automation" },
   { name: "Job Search Automation", icon: "Briefcase", category: "Workflows" },
   { name: "Telegram Chat Bot", icon: "MessageSquare", category: "Bot Architecture" },
   { name: "Voice Agent", icon: "Mic", category: "Conversational AI" },
@@ -142,25 +153,97 @@ export const COURSES_DATA = [
 
 export const PROJECTS_DATA: Project[] = [
   {
-    id: "cafe-story",
-    title: "Cafe Story",
-    tagline: "Artisanal Cafe & Interactive Culinary Web Experience",
-    category: "Web Design",
+    id: "ai-autonomous-agents",
+    title: "AI Autonomous Agents & Bots",
+    tagline: "Autonomous Telegram chatbots, Calendar Scheduling & YouTube pipeline automations",
+    category: "AI & Tools",
+    year: "2026",
     description:
-      "An experiential culinary and cafe web ecosystem featuring artisanal beverage showcases, interactive gourmet menus, ambience storytelling, and digital customer reservation flows.",
-    url: "https://cafestory.ai.studio",
+      "Autonomous Telegram chatbots, Calendar Scheduling Automation, and YouTube pipeline automations designed for 24/7 client response and automated productivity.",
+    url: "https://t.me/marenterprise07",
     featured: true,
-    tags: ["Google AI Studio", "Culinary Web", "Interactive Menu", "Brand Experience"],
-    gradient: "from-amber-950/70 via-purple-950/50 to-stone-950/80",
-    image: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80",
+    tags: ["Telegram Bot", "Agentic AI", "Automation", "Workflows"],
+    gradient: "from-blue-950/80 via-violet-900/60 to-purple-950/80",
+    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    id: "commercial-posters-branding",
+    title: "Commercial Posters & Brand Identity",
+    tagline: "Commercial poster designs, corporate branding collateral & flyer campaigns",
+    category: "Graphic Design",
+    year: "2026",
+    description:
+      "Commercial poster designs, corporate branding collateral, flyer campaigns, and digital assets created using Adobe Photoshop and Illustrator.",
+    url: "https://marenterprise.lovable.app",
+    featured: true,
+    tags: ["Photoshop", "Illustrator", "Poster Design", "Brand Guidelines"],
+    gradient: "from-pink-950/70 via-purple-900/50 to-slate-950/80",
+    image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    id: "mar-architectural-studio",
+    title: "MAR Architectural Studio",
+    tagline: "Architecture studio website presenting architectural design and structural engineering services",
+    category: "Architecture & Design",
+    year: "2026",
+    description:
+      "Architecture studio website presenting architectural design and structural engineering services in a professional, service-focused digital presence.",
+    url: "https://mar-architectural-studio.vercel.app",
+    featured: true,
+    tags: ["Architecture", "Service Presentation", "Responsive Web Design", "SEO"],
+    gradient: "from-purple-950/80 via-slate-900/60 to-violet-950/80",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    id: "mar-cloths-vercel",
+    title: "Mar Cloths",
+    tagline: "Premium fashion showroom website focused on clothing collections and bespoke apparel",
+    category: "Fashion & Retail",
+    year: "2026",
+    description:
+      "Premium fashion showroom website focused on clothing collections and bespoke apparel, with a polished brand presentation for customer discovery.",
+    url: "https://marcloths.vercel.app",
+    featured: true,
+    tags: ["Fashion Retail", "Clothing Showcase", "Brand Identity", "Responsive Design"],
+    gradient: "from-fuchsia-950/60 via-purple-900/40 to-slate-950/80",
+    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    id: "kage-sage",
+    title: "Kage Sage",
+    tagline: "Atmospheric digital experience: Where stillness reveals the unseen",
+    category: "Web Design",
+    year: "2026",
+    description:
+      "Atmospheric digital experience built around the theme “Where stillness reveals the unseen,” emphasizing visual storytelling and a distinctive brand presentation.",
+    url: "https://kage-sage.vercel.app",
+    featured: true,
+    tags: ["Visual Storytelling", "Brand Experience", "Responsive UI", "Web Design"],
+    gradient: "from-slate-950 via-zinc-900 to-purple-950",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    id: "footwear-emporium",
+    title: "Footwear Emporium",
+    tagline: "Sneaker and athletic footwear e-commerce application concept",
+    category: "E-Commerce",
+    year: "2026",
+    description:
+      "Sneaker and athletic footwear e-commerce application concept with product styling, filtering, and cart ordering.",
+    url: "https://footwearemporium.lovable.app",
+    featured: true,
+    tags: ["E-Commerce", "Sneaker Boutique", "Dynamic Filtering", "Modern UI"],
+    gradient: "from-purple-950/60 via-indigo-900/40 to-violet-950/80",
+    image: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1200&q=80",
   },
   {
     id: "mar-enterprise",
     title: "Mar Enterprise",
-    tagline: "Flagship Corporate & Digital Services Hub",
+    tagline: "Corporate web ecosystem for M.A.R Enterprise showcasing digital creative services",
     category: "Web Design",
+    year: "2025",
     description:
-      "The premier corporate web ecosystem for M.A.R Enterprise showcasing modern digital creative services, agency portfolio, and brand solutions.",
+      "Corporate web ecosystem for M.A.R Enterprise showcasing digital creative services, agency portfolio, and brand solutions.",
     url: "https://marenterprise.lovable.app",
     featured: true,
     tags: ["React", "Tailwind CSS", "Enterprise UI", "Brand Identity"],
@@ -168,12 +251,27 @@ export const PROJECTS_DATA: Project[] = [
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
   },
   {
+    id: "cafe-story",
+    title: "Cafe Story",
+    tagline: "Culinary and cafe web ecosystem featuring beverage showcases and interactive menus",
+    category: "Web Design",
+    year: "2026",
+    description:
+      "Culinary and cafe web ecosystem featuring beverage showcases, interactive menus, ambience storytelling, and digital customer reservation flows.",
+    url: "https://cafestory.ai.studio",
+    featured: true,
+    tags: ["Google UI", "Culinary Web", "Interactive Menu", "Brand Experience"],
+    gradient: "from-amber-950/70 via-purple-950/50 to-stone-950/80",
+    image: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
     id: "mar-watch-enterprise",
     title: "Mar Watch Enterprise",
-    tagline: "Luxury Timepiece E-Commerce Boutique",
+    tagline: "Luxury horology storefront concept with editorial typography & product showcasing",
     category: "E-Commerce",
+    year: "2026",
     description:
-      "A high-end luxury horology storefront crafted with editorial typography, product showcasing, interactive catalogue, and sleek checkout experience.",
+      "Luxury horology storefront concept with editorial typography, product showcasing, interactive catalogue, and checkout experience.",
     url: "https://marwatchenterprise.lovable.app",
     featured: true,
     tags: ["E-Commerce", "Luxury UI", "Product Showcase", "Modern Web"],
@@ -181,25 +279,27 @@ export const PROJECTS_DATA: Project[] = [
     image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80",
   },
   {
-    id: "mar-cloths",
+    id: "mar-cloths-lovable",
     title: "Mar Cloths",
-    tagline: "Modern Apparel & Fashion Storefront",
+    tagline: "Fashion apparel destination concept with responsive lookbooks & trend filters",
     category: "E-Commerce",
+    year: "2026",
     description:
-      "Contemporary fashion apparel destination designed with responsive lookbooks, seasonal collections, trend filters, and seamless customer shopping flow.",
+      "Fashion apparel destination concept with responsive lookbooks, seasonal collections, trend filters, and customer shopping flow.",
     url: "https://marcloths.lovable.app",
     featured: true,
     tags: ["Apparel", "Fashion E-Commerce", "Responsive Design", "Creative UI"],
-    gradient: "from-fuchsia-950/60 via-purple-900/40 to-slate-950/80",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80",
+    gradient: "from-violet-950/70 via-purple-900/40 to-pink-950/70",
+    image: "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1200&q=80",
   },
   {
     id: "mar-tourism",
     title: "Mar Tourism",
-    tagline: "Global Travel & Destination Gateway",
+    tagline: "Travel portal concept featuring destination discovery & interactive tour booking",
     category: "Web Design",
+    year: "2026",
     description:
-      "An immersive travel portal featuring destination discovery, custom itinerary highlights, interactive tour booking, and vibrant imagery curation.",
+      "Travel portal concept featuring destination discovery, itinerary highlights, interactive tour booking, and imagery curation.",
     url: "https://martourism.base44.app",
     featured: true,
     tags: ["Travel & Tourism", "Destination Booking", "Full-Stack App", "UX"],
@@ -209,146 +309,108 @@ export const PROJECTS_DATA: Project[] = [
   {
     id: "raheem-cursor",
     title: "Raheem Cursor",
-    tagline: "Interactive AI Developer Suite & Tools",
+    tagline: "Developer showcase and productivity interface with micro-interactions & AI workflows",
     category: "AI & Tools",
+    year: "2026",
     description:
-      "An interactive developer showcase and modern productivity interface demonstrating fluid micro-interactions, responsive tools, and AI workflows.",
+      "Developer showcase and productivity interface demonstrating micro-interactions, responsive tools, and AI workflows.",
     url: "https://raheemcursor.lovable.app",
     featured: true,
     tags: ["AI Tools", "Developer Suite", "Next-Gen UI", "Automation"],
     gradient: "from-violet-950/60 via-purple-900/40 to-fuchsia-950/80",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
   },
-  {
-    id: "footwear-emporium",
-    title: "Footwear Emporium",
-    tagline: "Premium Footwear & Sneaker Emporium",
-    category: "E-Commerce",
-    description:
-      "Specialty sneaker and athletic footwear e-commerce application highlighting dynamic product 360 styling, filter matrices, and rapid cart ordering.",
-    url: "https://footwearemporium.lovable.app",
-    featured: true,
-    tags: ["E-Commerce", "Sneaker Boutique", "Dynamic Filtering", "Modern UI"],
-    gradient: "from-purple-950/60 via-indigo-900/40 to-violet-950/80",
-    image: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    id: "asdc-commercial-branding",
-    title: "Commercial Posters & Brand Identity",
-    tagline: "High-Impact Commercial Posters & Visual Creatives",
-    category: "Graphic Design",
-    description:
-      "Professional commercial poster designs, corporate branding collateral, flyer campaigns, and digital assets designed using Adobe Photoshop and Illustrator.",
-    url: "https://marenterprise.lovable.app",
-    featured: true,
-    tags: ["Photoshop", "Illustrator", "Poster Design", "Brand Guidelines"],
-    gradient: "from-pink-950/60 via-purple-900/40 to-slate-950/80",
-    image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    id: "ai-telegram-agents",
-    title: "AI Autonomous Agents & Bots",
-    tagline: "Intelligent Workflows & Automated Lead Channels",
-    category: "AI & Tools",
-    description:
-      "Autonomous Telegram chat bots, calendar scheduling automation, and YouTube pipeline automations delivering 24/7 client response and automated productivity.",
-    url: "https://t.me/marenterprise07",
-    featured: true,
-    tags: ["Telegram Bot", "Agentic AI", "Automation", "Workflows"],
-    gradient: "from-blue-950/60 via-violet-900/40 to-purple-950/80",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
-  },
 ];
 
 export const SERVICES_DATA: Service[] = [
   {
-    id: "graphic-design",
+    id: "digital-marketing",
     number: "01",
-    title: "Graphic Designing & Branding",
+    title: "Digital Marketing & Creative Assets",
     description:
-      "Complete visual identity creation, including logo design, commercial posters, promotional flyers, photo retouching, and vector illustration.",
-    icon: "Palette",
+      "High-converting ad creatives | Social media visual strategy | Campaign banners & thumbnails | Brand style guides & assets | Growth metric tracking",
+    icon: "TrendingUp",
     features: [
-      "Custom Logo & Brand Identity",
-      "Event Posters & Social Creatives",
-      "Corporate Flyers & Stationery",
-      "Advanced Photoshop Retouching",
-      "Adobe Illustrator Vector Graphics",
+      "High-converting ad creatives",
+      "Social media visual strategy",
+      "Campaign banners & thumbnails",
+      "Brand style guides & assets",
+      "Growth metric tracking",
     ],
   },
   {
-    id: "web-development",
+    id: "ai-agents-automation",
     number: "02",
-    title: "Website Design & Development",
-    description:
-      "Bespoke, blazing-fast responsive websites and web applications built with modern frameworks, high-conversion layouts, and clean animations.",
-    icon: "Globe",
-    features: [
-      "Mobile-First Responsive Layouts",
-      "Modern React & Next.js Architecture",
-      "E-Commerce & Storefront Platforms",
-      "Interactive UI Micro-animations",
-      "Performance & SEO Optimization",
-    ],
-  },
-  {
-    id: "ai-automation",
-    number: "03",
     title: "AI Agents & Workflow Automation",
     description:
-      "Automating repetitive operations, customer engagement, and lead processing using autonomous AI agents, chat bots, and custom automations.",
+      "Custom AI autonomous agents | Telegram & WhatsApp chatbots | Meeting & calendar scheduling bots | YouTube, Instagram, Facebook& content automations | Automated job search & outreach",
     icon: "Bot",
     features: [
-      "Custom AI Autonomous Agents",
-      "Telegram & WhatsApp Chatbots",
-      "Meeting & Calendar Scheduling Bots",
-      "YouTube & Content Automations",
-      "Automated Job Search & Outreach",
+      "Custom AI autonomous agents",
+      "Telegram & WhatsApp chatbots",
+      "Meeting & calendar scheduling bots",
+      "YouTube, Instagram, Facebook& content automations",
+      "Automated job search & outreach",
     ],
   },
   {
-    id: "web-mobile-apps",
+    id: "website-design-development",
+    number: "03",
+    title: "Website Design & Development",
+    description:
+      "Mobile-first responsive layouts | React & Next.js architecture | E-commerce/storefront platforms | Interactive UI micro-animations | Performance & SEO optimization",
+    icon: "Globe",
+    features: [
+      "Mobile-first responsive layouts",
+      "React & Next.js architecture",
+      "E-commerce/storefront platforms",
+      "Interactive UI micro-animations",
+      "Performance & SEO optimization",
+    ],
+  },
+  {
+    id: "web-mobile-applications",
     number: "04",
     title: "Web & Mobile Applications",
     description:
-      "Full-featured progressive web apps and mobile interfaces engineered for seamless touch interaction, data synchronization, and high user retention.",
+      "Progressive Web Apps (PWA) | Cross-platform mobile experiences | API integrations & cloud backends | Real-time dashboard analytics | Secure authentication & user states",
     icon: "Smartphone",
     features: [
       "Progressive Web Apps (PWA)",
-      "Cross-Platform Mobile Experiences",
-      "API Integrations & Cloud Backends",
-      "Real-time Dashboard Analytics",
-      "Secure Authentication & User States",
+      "Cross-platform mobile experiences",
+      "API integrations & cloud backends",
+      "Real-time dashboard analytics",
+      "Secure authentication & user states",
     ],
   },
   {
-    id: "digital-marketing",
+    id: "website-deployment-support",
     number: "05",
-    title: "Digital Marketing & Creative Assets",
-    description:
-      "Strategic visual assets tailored for digital advertising, social media campaigns, brand awareness, and user conversion funnels.",
-    icon: "TrendingUp",
-    features: [
-      "High-converting Ad Creatives",
-      "Social Media Visual Strategy",
-      "Campaign Banners & Thumbnails",
-      "Brand Style Guides & Assets",
-      "Growth Metric Tracking",
-    ],
-  },
-  {
-    id: "cloud-deployment",
-    number: "06",
     title: "Website Deployment & Support",
     description:
-      "End-to-end cloud deployment, domain configuration, continuous performance monitoring, and dependable ongoing maintenance.",
+      "Cloud deployment & CDN setup | Domain DNS & SSL configuration | Performance monitoring & backups | Security audits & patch updates | Dedicated client support",
     icon: "Rocket",
     features: [
-      "Cloud Deployment & CDN Setup",
-      "Domain DNS & SSL Configuration",
-      "Performance Monitoring & Backups",
-      "Security Audits & Patch Updates",
-      "Dedicated 24/7 Client Support",
+      "Cloud deployment & CDN setup",
+      "Domain DNS & SSL configuration",
+      "Performance monitoring & backups",
+      "Security audits & patch updates",
+      "Dedicated client support",
+    ],
+  },
+  {
+    id: "graphic-designing-branding",
+    number: "06",
+    title: "Graphic Designing & Branding",
+    description:
+      "Custom logo & brand identity | Event posters & social creatives | Corporate flyers & stationery | Advanced Photoshop retouching | Adobe Illustrator vector graphics",
+    icon: "Palette",
+    features: [
+      "Custom logo & brand identity",
+      "Event posters & social creatives",
+      "Corporate flyers & stationery",
+      "Advanced Photoshop retouching",
+      "Adobe Illustrator vector graphics",
     ],
   },
 ];
@@ -379,16 +441,19 @@ export const QUALITIES_LIST = [
 export const EXPERIENCE_DATA = [
   {
     period: "2024 – Present",
-    role: "Founder & Lead Digital Creator",
-    company: "M.A.R Enterprise",
+    role: "Lead Digital Projects",
+    company: "MAR Enterprise",
     location: "Hyderabad, India",
-    type: "Independent Agency & Projects",
+    type: "Digital Marketing, AI & Web",
     description:
-      "Spearheading digital design, commercial web platforms, and automated workflow solutions for diverse business clients. Delivered 6+ live interactive web platforms and multiple brand identity packages.",
+      "Lead digital projects spanning Digital Marketing, AI automation, AI-agent workflows, Web Platforms, Branding, and creative assets for business use cases.",
     highlights: [
-      "Architected and deployed 6 live web platforms including Mar Enterprise, Mar Watch, and Footwear Emporium.",
-      "Produced 50+ commercial graphic design assets across Photoshop, Illustrator, and Canva.",
-      "Engineered automated Telegram bots and workflow scripts saving client hours weekly.",
+      "Lead digital projects spanning Digital Marketing, AI automation, AI-agent workflows, Web Platforms, Branding, and creative assets for business use cases.",
+      "Build and deploy automation solutions including Telegram and WhatsApp chatbot concepts, Meeting/Calendar scheduling workflows, YouTube, Instagram, Facebook/Content automations, and job-search/outreach automation.",
+      "Develop digital marketing solutions covering Social Media account handling and Posting, content planning, professional social creatives, Google Ads, Meta Ads, Audience Targeting, campaign management, performance monitoring, and Ad optimization.",
+      "Design and develop responsive web platforms using modern web architecture, with experience across React/Next.js concepts, Tailwind CSS, e-commerce interfaces, SEO, GEO, AEO, Animations, API integrations, and Cloud deployment.",
+      "Created and managed a portfolio of live web and Digital Projects.",
+      "Produced 50+ commercial graphic design assets across Photoshop, Illustrator, and Canva, according to the portfolio.",
     ],
   },
   {
@@ -398,10 +463,11 @@ export const EXPERIENCE_DATA = [
     location: "Hyderabad, India",
     type: "Project-Based",
     description:
-      "Executed end-to-end poster campaigns, corporate stationery, and customized front-end interfaces while completing specialized certifications in Graphic Design and Office Systems.",
+      "Executed end-to-end poster campaigns, corporate stationery, Digital Marketing Banners, Logos, flyers, and Customized front-end interfaces.",
     highlights: [
-      "Completed ASDC Graphic Designing and SETWIN MS Office Professional Certifications.",
-      "Designed logos, flyers, and digital marketing banners for local businesses and events.",
+      "Executed end-to-end poster campaigns, corporate stationery, Digital Marketing Banners, Logos, flyers, and Customized front-end interfaces.",
+      "Applied graphic design and office-software skills to business and event-oriented creative work.",
+      "Completed specialized certifications in Graphic Designing and MS Office Professional.",
     ],
   },
 ];
